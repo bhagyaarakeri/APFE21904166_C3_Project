@@ -9,7 +9,7 @@ public class RestaurantService {
         Restaurant res = null;
         for(Restaurant restaurant : restaurants){
             if(restaurant.getName().equalsIgnoreCase(restaurantName)){
-                return restaurant;
+                res = restaurant;
             }
         }
         if(null == res)
