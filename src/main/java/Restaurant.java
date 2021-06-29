@@ -63,5 +63,10 @@ public class Restaurant {
     public String getName() {
         return name;
     }
+	
+	public int calculateTotalAmt(List<String> selectedItem){
+        int total = 0;
+        return total;
+    }
 
 }

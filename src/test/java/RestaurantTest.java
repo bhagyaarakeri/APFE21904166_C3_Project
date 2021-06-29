@@ -62,4 +62,14 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	
+	//>>>>>>>>>>>>>>>>>>>>>>>>>>>GET TOTAL PRICE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    @Test
+    public void is_total_amount_calculated_by_the_system_is_same_as_total_price(){
+        List<String> selectItems = new ArrayList<String>();
+        selectItems.add("Sweet corn soup");
+        selectItems.add("Noodles");
+        assertEquals(289, restaurant.calculateTotalAmt(selectItems));
+    }
+    //<<<<<<<<<<<<<<<<<<<<<<<GET TOTAL PRICE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
